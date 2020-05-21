@@ -14,7 +14,6 @@ $(document).ready(function() {
 
   select.on('change', function() {
     var value_select = this.value;
-    console.log(value_select);
     $(".cd").each(function(){
       var corrente = $(this)
       corrente.addClass("disabled")
