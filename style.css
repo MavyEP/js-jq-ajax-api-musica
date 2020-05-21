@@ -14,6 +14,9 @@ body {
     width: 1070px;
     height: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header {
@@ -51,6 +54,11 @@ header img {
     max-width: 100%;
 }
 
+.cd h3:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .cd h3 {
     margin: 20px 0;
     color: white;
@@ -65,4 +73,12 @@ header img {
 
 .cd span.year {
     color: grey;
+}
+
+.cd span:hover{
+    cursor: default;
+}
+
+.disabled {
+  display: none;
 }

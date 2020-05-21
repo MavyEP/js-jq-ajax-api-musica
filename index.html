@@ -12,17 +12,22 @@
         <header>
             <div class="container">
                 <img src="logo.png" alt="logo" />
+                <select class="" name="generi">
+                  <option value="All">All</option>
+                  <option value="Rock">Rock</option>
+                  <option value="Pop">Pop</option>
+                  <option value="Jazz">Jazz</option>
+                  <option value="Metal">Metal</option>
+                </select>
             </div>
         </header>
-        <div class="cds-container container">
-
-        </div>
+        <div class="cds-container container"></div>
         <script id="template" type="text/x-handlebars-template">
-              <div class="cd">
-                  <img src="{{poster}}" alt="">
-                  <h3> {{title}} </h3>
-                  <span class="author"> {{author}} </span>
-                  <span class="year"> {{year}} </span>
+              <div class="cd {{genere}}">
+                  <img src="{{img}}" alt="">
+                  <h3> {{titolo}} </h3>
+                  <span class="author"> {{autore}} </span>
+                  <span class="year"> {{anno}} </span>
               </div>
         </script>
         <script src="main.js" charset="utf-8"></script>
