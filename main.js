@@ -15,12 +15,12 @@ $(document).ready(function() {
   select.on('change', function() {
     var value_select = this.value;
     $(".cd").each(function(){
-      var corrente = $(this)
-      corrente.addClass("disabled")
+      var corrente = $(this);
+      corrente.addClass("disabled");
       if (corrente.hasClass(value_select)) {
-        corrente.removeClass("disabled")
+        corrente.removeClass("disabled");
       } else if (value_select == "All") {
-        corrente.removeClass("disabled")
+        corrente.removeClass("disabled");
       };
     });
   });
@@ -30,9 +30,7 @@ $(document).ready(function() {
     "method" : "GET" ,
     "success" : function (data) {
       var disk = data.response;
-
       for (var i = 0; i < disk.length; i++) {
-
        var disk_corrente = disk[i];
 
        disco.titolo = disk_corrente.title;
@@ -43,7 +41,6 @@ $(document).ready(function() {
 
        var html = template(disco);
        container.append(html);
-
       }
     },
     "error" : function () {
